@@ -14,6 +14,8 @@
 ## parent environment, the object in its parent environment have access to the
 ## functions and its environment--including data objects referenced by its 
 ## function: x, inv_matrix. 
+## functions herein could access parent's data objects, obviating the need 
+## to explicitly declaring those objects.
 ## ** [See explanation by lgreski "Demystifying makeVector()"]
 
 makeCacheMatrix <- function(x = matrix()) {
